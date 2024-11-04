@@ -15,10 +15,20 @@ const Wrapper = styled.div`
       top:50%;
       left:50%;
       transform: translate(-50%,-50%);
-      width: 500px;
+      width: 50rem;
       background: #fff;
       box-shadow: 0 20px 75px rgba(0,0,0,.23);
       color: #000;
+
+      /* media query start here */
+         
+       @media(min-width:330px){
+        width:30rem;
+       }
+       @media(min-width:560px){
+        width:50rem;
+       }
+      /* media query end here  */
     }
     form{
       padding: 60px 30px;

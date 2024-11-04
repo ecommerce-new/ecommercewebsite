@@ -5,7 +5,7 @@ import Signup_LoginForm from "./Signup_LoginForm";
 import { signUpLoginSchema } from "../../schemas";
 import signupImage from "../../assets/img/signupform/signupImage.webp";
 import { useSelector } from "react-redux";
-const Wrapper = styled.div`
+export const Signup_Form = styled.div`
   .mainform_image_section {
     display: flex;
     justify-content: space-between;
@@ -18,6 +18,10 @@ const Wrapper = styled.div`
     flex: 30%;
     padding-top: 8rem;
     /* background: red; */
+
+    @media(min-width:640px){
+        flex: 40%;
+    }
   }
   .signForm_Image {
     background-image: url(${signupImage});
@@ -36,6 +40,18 @@ const Wrapper = styled.div`
       left: 0;
       background-color: rgba(0, 38, 138, 0.2);
     }
+     
+    /* media query start here */
+
+    @media (min-width:330px){
+      display:none;
+    }
+
+    @media (min-width:640px){
+      flex:40%;
+      display:block;
+    }
+
   }
   .loginForm {
     display: none;
@@ -182,7 +198,7 @@ const SignupForm = () => {
   }
   return (
     <>
-      <Wrapper>
+      <Signup_Form>
         <div className="container-fluid">
           <div className="mainform_image_section">
             {/* form section start here */}
@@ -328,7 +344,7 @@ const SignupForm = () => {
             {/* image section end here  */}
           </div>
         </div>
-      </Wrapper>
+      </Signup_Form>
     </>
   );
 };

@@ -30,7 +30,6 @@ const Product_Main_Price = styled.div`
   span:last-child {
     font-size: 1.4rem;
     color: #272727;
-    margin-top: 0px;
   }
 `;
 const ProductImage = styled.div`

@@ -10,6 +10,7 @@ import ShopNow from '../shopNow/ShopNow.jsx';
 import PaymentForm from '../CheckOut/PaymentForm.jsx';
 import Searching from '../landingpage/Searching.jsx';
 import CartPop from '../CartPop/CartPop.jsx';
+import Signup_LoginForm from '../signupForm/Signup_LoginForm.jsx';
 const NavRouters = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const NavRouters = () => {
       <Route path="/product/:productCard/:product_name/:id" element={<TwistProductSlider/>}/>
       <Route path="/sign-up" element={<SignupForm/>}/>
       <Route path='/shop-now' element={<ShopNow/>}/>
+      <Route path="/login" element={<Signup_LoginForm/>}/>
       <Route path="/check-out" element={<PaymentForm/>}/>
       <Route path="/search" element={<Searching/>}/>
       <Route path="/search/:product_name/:id" element={<CartPop/>}/>

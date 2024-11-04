@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { showHide_LoginForm } from "../features/cartSlice";
 
-const Wrapper = styled.div`
+const SignupLoginForm = styled.div`
   .forgot_pass_form {
     display: none;
   }
@@ -99,7 +99,7 @@ const Signup_LoginForm = () => {
     // fa-eye-slash
   return (
     <>
-      <Wrapper>
+      <SignupLoginForm>
         <div className="signUp_LoginForm">
           <form action="#" onSubmit={handleSubmit}>
             <div className="login_email">
@@ -174,7 +174,7 @@ const Signup_LoginForm = () => {
           <ForgotPasswordForm  sendLoginFormHandler={loginFormHandler}/>
         </div>
         {/* forgot form end here  */}
-      </Wrapper>
+      </SignupLoginForm>
     </>
   );
 };

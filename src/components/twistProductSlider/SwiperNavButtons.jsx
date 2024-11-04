@@ -22,6 +22,13 @@ transform: translate(-50%, -50%);
      right:0 !important;
     
     }
+
+    @media(min-width:330px){
+        display:none;
+    }
+    @media(min-width:1200px){
+        display:flex;
+    }
 }
 `
 export const SwiperNavButtons = () => {
