@@ -1,0 +1,141 @@
+.wrapperTwo {
+  width: 50rem !important;
+}
+
+.wrapper {
+  width: 25rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  width: 50rem;
+  column-gap: 2rem;
+}
+
+.wrapper .inputData,
+.wrapperTwo .inputData {
+  height: 56px;
+  width: 100%;
+  position: relative;
+  border: 1px solid #e5e4e9;
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+}
+.wrapper .inputDataTwo {
+  box-shadow: none;
+}
+.wrapper .inputData input,
+.wrapper .inputData select {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 1.5rem;
+  outline: none;
+  padding-left: 0.6rem;
+  padding-top: 1.2em;
+  padding-bottom: 0.2em;
+  background-color: #fff;
+  /* border-radius: inherit; */
+}
+
+.wrapper .inputData input:not(:placeholder-shown) ~ label,
+.wrapper .inputData input:focus ~ label {
+  transform: translateY(-20px);
+  font-size: 10px;
+  color: #8a8b94;
+  font-weight: 600;
+}
+
+.wrapper .inputData select:focus ~ label,
+/* .wrapper .inputData select[value] ~ label, */
+.wrapper .inputData select:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 10px;
+  color: #8a8b94;
+  font-weight: 600;
+}
+
+.wrapper .inputData label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #8a8b94;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  padding-left: 0.6rem;
+}
+.checkBox {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  column-gap: 1rem;
+}
+.checkBox input[type="checkbox"] {
+  /* Hide the default checkbox */
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkBox label {
+  /* Custom checkbox appearance */
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.checkBox label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 1px solid #e5e4e9; /* Custom border */
+  background-color: #fff;
+  border-radius: 0.4rem;
+}
+
+.checkBox input[type="checkbox"]:checked + label::before {
+  background-color: #272727;
+  border-color: #e5e4e9;
+}
+
+.checkBox label::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 7px;
+  height: 12px;
+  background-color: #272727;
+  transform: rotate(45deg);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  opacity: 0;
+}
+
+.checkBox input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+}
+@media (min-width: 330px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .wrapperTwo {
+    width: 100% !important;
+  }
+  .flex {
+    display: inherit;
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .wrapper {
+    width: 100%;
+  }
+}

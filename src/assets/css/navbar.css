@@ -1,0 +1,214 @@
+.headerSlider {
+    position: relative;
+  }
+  /* add to cart section start here */
+  .Product_cart{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    height: 100dvh;
+  }
+  .activeProduct_cart{
+   transform: translateX(0);
+   
+  }
+  /* add to cart section end here  */
+  .header {
+    display: grid;
+    place-content: space-between;
+    place-items: center;
+    align-content: center;
+    grid-template-columns: repeat(2, max-content);
+    padding: 0 5%;
+    background: #fff;
+    height: 8rem;
+    line-height: 8rem;
+  }
+  .logo_bar {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    place-items: center;
+    column-gap: 2rem;
+    height: 100%;
+  }
+  .hamburger_icon {
+    margin-top: 1rem;
+  }
+  .header_logo .logo {
+    max-width: 20rem;
+    min-width: 5rem;
+    display: grid;
+    place-content: center;
+  }
+  .header_logo .logo a img {
+    width: 100%;
+    display: grid;
+  }
+  /* icon start here */
+  .hamburger_icon svg {
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  /* icon end here */
+  
+  /* other search icon start here */
+  
+  .header_main_icons ul {
+    display: flex;
+    column-gap: 2rem;
+  }
+  .header_main_icons ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .header_main_icons ul li a {
+    display: flex;
+    align-items: center;
+  }
+  /* other search icon end here */
+  
+  /* header_option_list start here */
+  .header_option_list {
+    background: #fff;
+    width: 30%;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-in-out;
+    z-index: 99999;
+  }
+  .header_option_list.active {
+    transform: translateX(0);
+  }
+  .header_option_list .sub_header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background: green; */
+    padding: 2rem;
+    border-bottom: 1px solid white;
+  }
+  .sub_header .cross_heading {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+  }
+  .sub_header .heading h4 a {
+    color: #000;
+    font-weight: var(--weight-eight);
+  }
+  .cross_heading .cross {
+    display: flex;
+    cursor: pointer;
+  }
+  /* basket start here */
+  .basket_bag {
+    display: flex;
+    cursor: pointer;
+  }
+  /* basket end here */
+  .option_list {
+    line-height: 4.5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+  .option_list li {
+    cursor: pointer;
+    font-size:1.4rem;
+    font-weight: 500;
+  }
+  /* header_option_list end here */
+  
+  /* marquee start here */
+  .header_markquee {
+    background: #4b3507;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+  }
+  marquee span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+  }
+  /* marquee end here */
+  @media (min-width: 580px) and (max-width: 1024px) {
+    .header_option_list {
+      width: 50dvw;
+    }
+  }
+  @media (min-width: 360px) and (max-width: 457px) {
+    .header_option_list {
+      width: 100dvw;
+    }
+    .header_logo .logo a img {
+      width: 11rem;
+    }
+    .hamburger_icon svg {
+      width: 2rem;
+    }
+    .icon_sublist svg {
+      width: 1.8rem;
+    }
+  }
+  @media (min-width: 457px) and (max-width: 580px) {
+    .header_logo .logo a img {
+      width: 15rem;
+    }
+    .hamburger_icon svg {
+      width: 2.5rem;
+    }
+    .icon_sublist svg {
+      width: 2rem;
+    }
+  }
+  @media (max-width: 360px) {
+    .header_option_list {
+      width: 100dvw;
+    }
+    .header_logo .logo a img {
+      width: 11rem;
+    }
+    .hamburger_icon svg {
+      width: 2rem;
+    }
+    .icon_sublist svg {
+      width: 1.8rem;
+    }
+  }
+  
+  /* second navbar start here */
+  .sticky_header {
+    top:0;
+    width: 100%;
+    z-index: 9999;
+    
+  }
+  /* second navbar end here  */
+  
+  /* add to cart start here  */
+  .add_to_cart_box{
+    position:relative;
+  }
+  .add_to_cart_box span{
+    position: absolute;
+    top: -5px;
+    right:-5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#000;
+    color:#fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  /* add to card end here  */

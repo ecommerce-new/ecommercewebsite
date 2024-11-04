@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    font-family: 'Poppins', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-style: normal;
+    background-color: #fff !important;
+    overflow-x: hidden;
+}
+:root{
+    --weight-one:100;
+    --weight-two:200;
+    --weight-three:300;
+    --weight-four:400;
+    --weight-five:500;
+    --weight-six:600;
+    --weight-seven:700;
+    --weight-eight:800;
+    --weight-nine:900;
+    --first-slider-para:rgb(176, 93, 93);
+    --font-family:"Poppins", sans-serif;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
