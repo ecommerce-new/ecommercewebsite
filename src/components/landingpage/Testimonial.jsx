@@ -73,7 +73,7 @@ const Testimonial = () => {
                     </span>
                     <div className="testimonial_para_heading">
                       <span className="testimonial_para">
-                        Brown Sarto, kadınlara özel desenli kimono, pareo ve bandana koleksiyonları sunan seçkin bir markadır. Ürünlerimiz, yüksek kaliteli malzemeler ve benzersiz tasarımlarla özenle üretilmektedir. Tarzınıza zarafet ve özgünlük katacak seçeneklerimizle her ortamda şıklığı yakalayabilirsiniz. Moda ve estetiği bir araya getiren Brown Sarto, sizlere unutulmaz bir giyim deneyimi vaat ediyor. Kendinizi her daim özel hissetmeniz için buradayız.
+                      Brown Sarto is an exclusive brand that offers women's custom-patterned kimono, pareo and bandana collections. Our products are carefully manufactured with high quality materials and unique designs. You can catch elegance in every environment with our options that will add elegance and originality to your style. Bringing together fashion and aesthetics, Brown Sarto promises you an unforgettable clothing experience. We're here to make you feel special all the time.
                       </span>
                       <span className="testimonial_writter">BROWN SARTO</span>
                     </div>
@@ -91,7 +91,7 @@ const Testimonial = () => {
                     </span>
                     <div className="testimonial_para_heading">
                       <span className="testimonial_para">
-                        Brown Sarto, kadınlara özel desenli kimono, pareo ve bandana koleksiyonları sunan seçkin bir markadır. Ürünlerimiz, yüksek kaliteli malzemeler ve benzersiz tasarımlarla özenle üretilmektedir. Tarzınıza zarafet ve özgünlük katacak seçeneklerimizle her ortamda şıklığı yakalayabilirsiniz. Moda ve estetiği bir araya getiren Brown Sarto, sizlere unutulmaz bir giyim deneyimi vaat ediyor. Kendinizi her daim özel hissetmeniz için buradayız.
+                      Brown Sarto is an exclusive brand that offers women's custom-patterned kimono, pareo and bandana collections. Our products are carefully manufactured with high quality materials and unique designs. You can catch elegance in every environment with our options that will add elegance and originality to your style. Bringing together fashion and aesthetics, Brown Sarto promises you an unforgettable clothing experience. We're here to make you feel special all the time.
                       </span>
                       <span className="testimonial_writter">BROWN SARTO</span>
                     </div>
@@ -109,7 +109,7 @@ const Testimonial = () => {
                     </span>
                     <div className="testimonial_para_heading">
                       <span className="testimonial_para">
-                        Brown Sarto, kadınlara özel desenli kimono, pareo ve bandana koleksiyonları sunan seçkin bir markadır. Ürünlerimiz, yüksek kaliteli malzemeler ve benzersiz tasarımlarla özenle üretilmektedir. Tarzınıza zarafet ve özgünlük katacak seçeneklerimizle her ortamda şıklığı yakalayabilirsiniz. Moda ve estetiği bir araya getiren Brown Sarto, sizlere unutulmaz bir giyim deneyimi vaat ediyor. Kendinizi her daim özel hissetmeniz için buradayız.
+                      Brown Sarto is an exclusive brand that offers women's custom-patterned kimono, pareo and bandana collections. Our products are carefully manufactured with high quality materials and unique designs. You can catch elegance in every environment with our options that will add elegance and originality to your style. Bringing together fashion and aesthetics, Brown Sarto promises you an unforgettable clothing experience. We're here to make you feel special all the time.
                       </span>
                       <span className="testimonial_writter">BROWN SARTO</span>
                     </div>

@@ -143,7 +143,12 @@
       width: 50dvw;
     }
   }
-  @media (min-width: 360px) and (max-width: 457px) {
+  @media(max-width:580px){
+    .header_option_list {
+      width: 50dvw;
+    }
+  }
+  @media (min-width: 360px) and (max-width: 480px) {
     .header_option_list {
       width: 100dvw;
     }

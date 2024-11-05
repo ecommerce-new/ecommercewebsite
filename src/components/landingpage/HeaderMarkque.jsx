@@ -9,94 +9,94 @@ const HeaderMarkque = () => {
         <div className="header_markquee">
           <marquee behavior="scroll" direction="rtl">
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
             <span style={{ padding: "0px 25px" }}>
-              Yeni Sezon İlk Alışverişinde Sepette Ek %10 İndirim
+              Additional 10% Discount in the basket in the New Season First Shopping
             </span>
           </marquee>
         </div>

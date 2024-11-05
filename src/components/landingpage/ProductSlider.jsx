@@ -96,7 +96,7 @@ const ProductSlider = () => {
   <>
   <div className="productOne">
     <div className="productOne_heading">
-      <h2>Haftanın Ürünleri</h2>
+      <h2>Products of the Week</h2>
     </div>
     
     <div className="product_SliderImage">

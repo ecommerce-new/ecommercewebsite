@@ -42,13 +42,13 @@ const BannerSlider = () => {
             <SwiperSlide>
               <div class="slider-content center v-center ">
                 <div class="slider_heading_button">
-                  <h1 style={{ color: "rgb(238, 228, 218)" }}>PAREO</h1>
+                  <h1 style={{ color: "rgb(238, 228, 218)" }}>PARAO</h1>
                   <p style={{ color: "rgb(238, 228, 218)" }}>BANDANA</p>
                   <div class="slider_button">
 
                     <a class="slider-0"
                       style={{ color: "rgb(35, 35, 35)", backgroundColor: "rgb(255, 255, 255)", padding: "13px", borderRadius: "6px", fontSize: "15px", fontWeight: "700" }}
-                      href="/kimono">ALIŞVERİŞE BAŞLA</a>
+                      href="/kimono">SHOPPING START</a>
                   </div>
                 </div>
               </div>
@@ -62,13 +62,13 @@ const BannerSlider = () => {
             <SwiperSlide>
               <div class="slider-content center v-center">
                 <div class="slider_heading_button">
-                  <h1 style={{ color: "rgb(238, 228, 218)" }}>KİMONO TUNİK</h1>
+                  <h1 style={{ color: "rgb(238, 228, 218)" }}>KIMONO TUNIC</h1>
                   <p style={{ color: "rgb(238, 228, 218)" }}></p>
                   <div class="slider_button">
 
                     <a class="slider-0"
                       style={{ color: "rgb(35, 35, 35)", backgroundColor: "rgb(255, 255, 255)", padding: "13px", borderRadius: "6px", fontSize: "15px", fontWeight: "700" }}
-                      href="/kimono">ALIŞVERİŞE BAŞLA</a>
+                      href="/kimono">SHOPPING START</a>
                   </div>
                 </div>
               </div>
@@ -86,7 +86,7 @@ const BannerSlider = () => {
                   <div class="slider_button">
                     <a class="slider-0  "
                       style={{ color: "rgb(35, 35, 35)", backgroundColor: "rgb(255, 255, 255)", padding: "13px", borderRadius: "6px", fontSize: "15px", fontWeight: "700" }}
-                      href="/kimono">ALIŞVERİŞE BAŞLA</a>
+                      href="/kimono">SHOPPING START</a>
                   </div>
                 </div>
               </div>
@@ -105,7 +105,7 @@ const BannerSlider = () => {
                   <div class="slider_button">
                     <a class="slider-0  "
                       style={{ color: "rgb(35, 35, 35)", backgroundColor: "rgb(255, 255, 255)", padding: "13px", borderRadius: "6px", fontSize: "15px", fontWeight: "700" }}
-                      href="/kimono">ALIŞVERİŞE BAŞLA</a>
+                      href="/kimono">SHOPPING START</a>
                   </div>
                 </div>
               </div>
@@ -123,7 +123,7 @@ const BannerSlider = () => {
                   <div class="slider_button">
                     <a class="slider-0  "
                       style={{ color: "rgb(35, 35, 35)", backgroundColor: " rgb(255, 255, 255)", padding: " 13px", borderRadius: "6px", fontSize: "15px", fontWeight: "700" }}
-                      href="/kimono">ALIŞVERİŞE BAŞLA</a>
+                      href="/kimono">SHOPPING START</a>
                   </div>
                 </div>
               </div>
@@ -141,7 +141,7 @@ const BannerSlider = () => {
                   <div class="slider_button">
                     <a class="slider-0  "
                       style={{ color: "rgb(35, 35, 35)", backgroundColor: "rgb(255, 255, 255)", padding: "13px", borderRadius: "6px", fontSize: "15px", fontWeight: "700" }}
-                      href="/kimono">ALIŞVERİŞE BAŞLA</a>
+                      href="/kimono">SHOPPING START</a>
                   </div>
                 </div>
               </div>

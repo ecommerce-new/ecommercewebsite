@@ -255,7 +255,7 @@ const SecondProduct = () => {
             <Wrapper>
                 <div className="second_product_main">
                     <div className="second_product_heading">
-                        <h2 className="" style={{ color: "#000058", fontWeight: "900" }}>En Yeniler</h2>
+                        <h2 className="" style={{ color: "#000058", fontWeight: "900" }}>Latest</h2>
                     </div>
                     <div className="productTwo_SliderImage">
                         <Slider {...settings}>

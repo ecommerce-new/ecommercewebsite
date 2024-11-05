@@ -10,8 +10,8 @@ const BrownContent = () => {
                 </div>
                 <div class="content_heading">
                     <h2 class="heading">
-                        <span>&nbsp; &nbsp; En Şık Tasarımlar &nbsp;İle &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Yaz &nbsp;Havasını <br/> Hemen
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Yakalayın!..</span>
+                        <span>&nbsp; &nbsp; Catch Summer Air With The Stylishest&nbsp; <br/>
+                            &nbsp; &nbsp;  Designs!...</span>
                     </h2>
                 </div>
             </div>

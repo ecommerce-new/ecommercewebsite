@@ -24,27 +24,27 @@ const HeaderSlider = () => {
                 >
                     <SwiperSlide>
                         <div className="swiper-slide">
-                            <p>SEPETTE EK %10 İNDİRİM</p>
+                            <p>ADD 10% DISCOUNT IN BASKET</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="swiper-slide">
-                            <p>TÜM SİPARİŞLERDE KARGO ÜCRETSİZ</p>
+                            <p>CARGO FREE IN ALL ORDERS</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="swiper-slide">
-                            <p>Yeni sezon ürünler</p>
+                            <p>New season products</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="swiper-slide">
-                            <p>SEPETTE EK %10 İNDİRİM</p>
+                            <p>ADD 10% DISCOUNT IN BASKET</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="swiper-slide">
-                            <p>TÜM SİPARİŞLERDE KARGO ÜCRETSİZ</p>
+                            <p>CARGO FREE IN ALL ORDERS</p>
                         </div>
                     </SwiperSlide>
                 </Swiper>

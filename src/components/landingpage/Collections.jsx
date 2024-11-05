@@ -149,7 +149,7 @@ const Wrapper = styled.div`
     }
 
     .below_image_button a {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
     }
   }
 
@@ -200,14 +200,14 @@ const Collections = () => {
                 <div className="main_below_content">
                     <div className="below_content">
                         <div className="below_heading">
-                            <h2>KOLEKSİYONLAR</h2>
+                            <h2>COLLECTIONS</h2>
                         </div>
                         <div className="below_content_image">
                             <div className="below_image">
                                 <div className="below_image_heading">
-                                    <h3 style={{color:'#ffffffff',fontWeight:'900',width:'100%'}}>KOLEKSİYONLARI KEŞFET</h3>
+                                    <h3 style={{color:'#ffffffff',fontWeight:'900',width:'100%'}}>DISCOVER COLLECTIONS</h3>
                                     <div className="below_image_button">
-                                        <a className="" style={{padding:'11px',borderRadius:0,fontWeight:'900'}} href="/kimono">ALIŞVERİŞE BAŞLA</a>
+                                        <a className="" style={{padding:'11px',borderRadius:0,fontWeight:'700'}} href="/kimono">SHOPPING START</a>
                                     </div>
                                 </div>
                             </div>

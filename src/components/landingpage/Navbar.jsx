@@ -89,6 +89,22 @@ const Navbar = () => {
     setSearching(true);
   };
 
+  // const mySwiper = document.querySelector(".mySwiper");
+  // console.log("===>",mySwiper)
+  // const observer = new IntersectionObserver((entries)=>{
+  // const stickyHeader = document.querySelector('.sticky_header');
+  // entries.forEach((entry)=>{
+  //  if(entry.isIntersecting === false){
+  //     stickyHeader.style.position = 'fixed';
+  //     stickyHeader.style.boxShadow = `  0 5px 5px -7px #989898`;
+  //  }else{
+  //     stickyHeader.style.position = '';
+  //     stickyHeader.style.boxShadow = '';
+  //  }
+  // })
+  // },{threshold:1})
+  
+  // observer.observe(mySwiper)
   return (
     <>
       {isCheckOut || isSearch ? null : (
@@ -206,9 +222,9 @@ const Navbar = () => {
                     </div>
                     <div className="heading">
                       <h4>
-                        <a href="#">ÜYE GİRİŞİ</a>
+                        <a href="#">MEMBER LOGIN</a>
                         <span style={{ fontWeight: 600 }}>|</span>
-                        <a href="#">KAYIT OL</a>
+                        <a href="#">REGISTER</a>
                       </h4>
                     </div>
                   </div>
@@ -231,13 +247,13 @@ const Navbar = () => {
                 </div>
 
                 <ul className="option_list">
-                  <li className="option_sublist">KİMONO</li>
-                  <li className="option_sublist">PAREO</li>
+                  <li className="option_sublist">KIMONO</li>
+                  <li className="option_sublist">PARAO</li>
                   <li className="option_sublist">BANDANA</li>
-                  <li className="option_sublist">KİMONO+BANDANA</li>
+                  <li className="option_sublist">KIMONO+BANDANA</li>
                   <li className="option_sublist">PAREO+BANDANA</li>
-                  <li className="option_sublist">GÖMLEK</li>
-                  <li className="option_sublist">ELBİSE</li>
+                  <li className="option_sublist">SHIRT</li>
+                  <li className="option_sublist">DRESS</li>
                 </ul>
               </div>
               {/* navbar option list end here  */}

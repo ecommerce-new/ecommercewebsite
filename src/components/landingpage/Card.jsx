@@ -16,11 +16,11 @@ const Card = () => {
                         </div>
                         <a href="#">
                             <div className="card_button_heading">
-                                <span style={{ color: "rgb(0, 0, 0)", fontWeight: "600", fontSize: "28px" }} className="title">ÖZEL TASARIM</span>
-                                <span style={{ color: "rgb(255, 255, 255)", fontWeight: "800" }} className="title">KİMONOLAR</span>
+                                <span style={{ color: "rgb(0, 0, 0)", fontWeight: "600", fontSize: "28px" }} className="title">SPECIAL DESIGN</span>
+                                <span style={{ color: "rgb(255, 255, 255)", fontWeight: "800" }} className="title">KIMONOLAR</span>
                                 <span
                                     style={{ color: "rgb(255, 255, 255)", backgroundColor: "rgb(35, 35, 35)", fontWeight: "700", borderRadius: "0px",fontSize:'1.4rem', }}
-                                    className="link category-image-banner-0">ALIŞVERİŞE BAŞLA</span>
+                                    className="link category-image-banner-0">SHOPPING START</span>
                             </div>
                         </a>
                     </div>
@@ -32,11 +32,11 @@ const Card = () => {
                         </div>
                         <a href="#">
                             <div className="card_button_heading">
-                                <span style={{ color: "rgb(5, 5, 5)", fontWeight: "700", fontSize: "28px" }} className="title">ÖZEL DESEN</span>
-                                <span style={{ color: "rgb(255, 255, 255)", fontWeight: "800" }} className="title">PAREOLAR</span>
+                                <span style={{ color: "rgb(5, 5, 5)", fontWeight: "700", fontSize: "28px" }} className="title">SPECIAL PATTERN</span>
+                                <span style={{ color: "rgb(255, 255, 255)", fontWeight: "800" }} className="title">PAROSES</span>
                                 <span
                                     style={{ color: "rgb(255, 255, 255)", backgroundColor: "rgb(35, 35, 35)", fontWeight: "700", borderRadius: "0px",fontSize:'1.4rem',}}
-                                    className="link category-image-banner-0">ALIŞVERİŞE BAŞLA</span>
+                                    className="link category-image-banner-0">SHOPPING START</span>
                             </div>
                         </a>
                     </div>
@@ -48,11 +48,11 @@ const Card = () => {
                         </div>
                         <a href="#">
                             <div className="card_button_heading">
-                                <span style={{ color: "rgb(0, 0, 0)", fontWeight: "700", fontSize: "28px" }} className="title">KÜÇÜK AMA ŞIK</span>
-                                <span style={{ color: "rgb(255, 255, 255)", fontWeight: '800' }} className="title">BANDANALAR</span>
+                                <span style={{ color: "rgb(0, 0, 0)", fontWeight: "700", fontSize: "28px" }} className="title">SMALL BUT STY</span>
+                                <span style={{ color: "rgb(255, 255, 255)", fontWeight: '800' }} className="title">BANDANAS</span>
                                 <span
                                     style={{ color: "rgb(255, 255, 255)", backgroundColor: "rgb(35, 35, 35)", fontWeight: "700", borderRadius: "0px",fontSize:'1.4rem', }}
-                                    className="link category-image-banner-0">ALIŞVERİŞE BAŞLA</span>
+                                    className="link category-image-banner-0">SHOPPING START</span>
                             </div>
                         </a>
                     </div>

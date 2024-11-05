@@ -71,6 +71,8 @@ const Wrapper = styled.div`
     height: 100%;
     width: 25%;
     cursor: pointer;
+    font-size:1.4rem;
+    font-weight:700;
 }
 #error{
     color:#fff;
@@ -139,13 +141,13 @@ const EmailSection = () => {
                     <div className="email_section">
                         <div className="email_container">
                             <div className="email_heading">
-                                <h3 style={{width:"100%",textAlign:'center'}}>EKİBE KATIL</h3>
-                                <span className="subtext">Kampanya ve sürprizlerden ilk sen haberdar ol</span>
+                                <h3 style={{width:"100%",textAlign:'center'}}>PARTICIPATE TEAM</h3>
+                                <span className="subtext">Be the first to know about campaigns and surprises</span>
                             </div>
                             <form onSubmit={submitHandler}>
                                 <div className="email_input">
                                     <input type="text"
-                                        placeholder="email adresiniz"
+                                        placeholder="email address"
                                         className="outline-none"
                                         autocomplete="off"
                                         name="email"
@@ -154,7 +156,7 @@ const EmailSection = () => {
                                         onChange={changeHandler}
                                     />
 
-                                        <button type="submit">BİZE KATIL!</button>
+                                        <button type="submit" >JOIN US!</button>
                                 </div><br/>
                                     <small id="error"></small>
                             </form>

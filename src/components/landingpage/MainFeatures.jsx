@@ -43,7 +43,7 @@ const MainFeatures = () => {
                                 <img src={ImageOne} alt="features Image" />
                             </div>
                             <div className="features_para">
-                                <span style={{color:"#000"}}>256 Bit SSL ile güvende alışveriş</span>
+                                <span style={{color:"#000"}}>Secure shopping with 256 Bit SSL</span>
                             </div>
                         </div>
                         <div className="features_one">
@@ -51,7 +51,7 @@ const MainFeatures = () => {
                                 <img src={ImageTwo} alt="features Image" />
                             </div>
                             <div className="features_para">
-                                <span style={{color:"#000"}}>TÜM SİPARİŞLERDE KARGO ÜCRETSİZ</span>
+                                <span style={{color:"#000"}}>CARGO FREE IN ALL ORDERS</span>
                             </div>
                         </div>
                         <div className="features_one">
@@ -59,7 +59,7 @@ const MainFeatures = () => {
                                 <img src={ImageThree} alt="features Image" />
                             </div>
                             <div className="features_para">
-                                <span style={{color:"#000"}}>10 iş günü içerisinde iade</span>
+                                <span style={{color:"#000"}}>Return within 10 working days</span>
                             </div>
                         </div>
                     </div>
