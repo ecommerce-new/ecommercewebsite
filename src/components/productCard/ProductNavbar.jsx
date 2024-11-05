@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
+import ProductNavbarTwo from "./ProductNavbarTwo";
 
 const ProductSectionName = styled.div`
   display: flex;
@@ -27,6 +28,10 @@ const Product_search_navbar = styled.div`
   /* background: blue; */
   padding: 0 10rem;
   column-gap: 3rem;
+
+  @media(max-width:1024px){
+    display:none;
+  }
 `;
 const Search = styled.input`
   width: 100%;
@@ -113,6 +118,13 @@ const GridTemplate = styled.div`
   }
 `;
 
+const Responsive_product_navbar = styled.div`
+ display:none;
+
+ @media(max-width:1024px){
+  display:block;
+ }
+`
 const ProductNavbar = () => {
 
   useEffect(() => {
@@ -139,6 +151,7 @@ const ProductNavbar = () => {
           </ProductSectionName>
 
           {/* searching and navbar section start here */}
+        
           <Product_search_navbar className="product_search_navbar">
             {/* product search start here */}
             <div className="search">
@@ -201,8 +214,11 @@ const ProductNavbar = () => {
               </GridTemplate>
             </Flex>
           </Product_search_navbar>
-
           {/* searching and navbar section end here */}
+
+          <Responsive_product_navbar className="responsive_product_navbar">
+            <ProductNavbarTwo/>
+          </Responsive_product_navbar>
         </div>
       
     </>
