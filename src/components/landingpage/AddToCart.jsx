@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import ImageTwo from "../../assets/img/productImage/ImageTwo.webp";
+// import ImageTwo from "../../assets/img/productImage/ImageTwo.webp";
 import { useDispatch, useSelector } from "react-redux";
 import {
   increaseItemQuantity,
@@ -18,6 +18,10 @@ const Wrapper = styled.div`
     z-index: 9999;
     .addtocart_bodycontent {
       padding: 2rem;
+    }
+
+    @media(max-width:480px){
+      width:100dvw;
     }
   }
   span {

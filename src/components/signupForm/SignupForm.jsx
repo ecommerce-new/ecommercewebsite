@@ -5,6 +5,8 @@ import Signup_LoginForm from "./Signup_LoginForm";
 import { signUpLoginSchema } from "../../schemas";
 import signupImage from "../../assets/img/signupform/signupImage.webp";
 import { useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
+import HeadingOfLogin from "./HeadingOfLogin";
 export const Signup_Form = styled.div`
   .mainform_image_section {
     display: flex;
@@ -51,7 +53,9 @@ export const Signup_Form = styled.div`
       flex:40%;
       display:block;
     }
-
+    @media(min-width:780px){
+      flex:60%;
+    }
   }
   .loginForm {
     display: none;
@@ -120,14 +124,14 @@ export const Signup_Form = styled.div`
       }
     }
   }
-  .active {
+  /* .active {
     a {
       margin-right: 50px;
       color: #000;
       font-size: 25px;
       font-weight: 800 !important;
     }
-  }
+  } */
   .last_name,
   .signup_email,
   .signup_password {
@@ -148,12 +152,10 @@ const initialValues = {
 };
 
 const SignupForm = () => {
-  const { hideLoginForm, removeActiveClass } = useSelector(
-    (state) => state.allCart
-  );
+ 
   const eyeIconRef = useRef(null)
   const passwordInputRef = useRef(null);
-  console.log("removeActiveClass==>",removeActiveClass)
+  // console.log("removeActiveClass==>", removeActiveClass)
   const { values, touched, handleBlur, handleChange, handleSubmit, errors } =
     useFormik({
       initialValues: initialValues,
@@ -163,37 +165,19 @@ const SignupForm = () => {
         action.resetForm();
       },
     });
-   
-  const loginFormHandler = () => {
-    const loginForm = document.querySelector(".loginForm");
-    const signupForm = document.querySelector(".SignupForm");
-    const loginHeading = document.querySelector(".login_heading");
-    const signUpHeading = document.querySelector(".signup_heading");
-    loginForm.style.display = "block";
-    signupForm.style.display = "none";
-    signUpHeading.classList.remove("active");
-    loginHeading.classList.add("active");
-  };
-  const signFormHandler = () => {
-    const loginForm = document.querySelector(".loginForm");
-    const signupForm = document.querySelector(".SignupForm");
-    const loginHeading = document.querySelector(".login_heading");
-    const signUpHeading = document.querySelector(".signup_heading");
-    signupForm.style.display = "block";
-    loginForm.style.display = "none";
-    signUpHeading.classList.add("active");
-    loginHeading.classList.remove("active");
-  };
+
+ 
+ 
   let toggleIcon = false;
-  const showPasswordHandler = () =>{
+  const showPasswordHandler = () => {
     toggleIcon = !toggleIcon;
     // console.log("==>",passwordInputRef.current.setAttribute("type","text"))
-    if(toggleIcon){
-      eyeIconRef.current.classList.replace("fa-eye","fa-eye-slash")
-      passwordInputRef.current.setAttribute("type","text")
-    }else{
-      eyeIconRef.current.classList.replace("fa-eye-slash","fa-eye")
-      passwordInputRef.current.setAttribute("type","password")
+    if (toggleIcon) {
+      eyeIconRef.current.classList.replace("fa-eye", "fa-eye-slash")
+      passwordInputRef.current.setAttribute("type", "text")
+    } else {
+      eyeIconRef.current.classList.replace("fa-eye-slash", "fa-eye")
+      passwordInputRef.current.setAttribute("type", "password")
     }
   }
   return (
@@ -204,22 +188,7 @@ const SignupForm = () => {
             {/* form section start here */}
             <div className="sign_form_section">
               <div className="sign_form">
-                {hideLoginForm ? (
-                  <div className="heading">
-                    <h1 
-                    className={`login_heading ${removeActiveClass ? 'active' : null}`} 
-                    onClick={loginFormHandler}> 
-                      <a href="#">Login</a>
-                    </h1>
-                    <h1
-                      className={`signup_heading ${!removeActiveClass ? 'active': null}`}
-                      onClick={signFormHandler}
-                    >
-                      <a href="#">Become a member</a>
-                    </h1>
-                  </div>
-                ) : null}
-
+               <HeadingOfLogin/>
                 {/* form start here */}
                 {/* login form start here */}
                 <div className="loginForm">

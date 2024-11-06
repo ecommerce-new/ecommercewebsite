@@ -303,11 +303,31 @@ const Wrapper = styled.div`
 const Footer = () => {
   
 
+    // const showlistHandler = (e) => {
+    //     const currentEle = e.target;
+      
+    //     const icon = currentEle.firstElementChild;
+    //     const path = icon.firstElementChild;
+    //     let currentPath = path.getAttribute("d");  // Use 'let' instead of 'const'
+         
+    //     const ulList = currentEle.nextElementSibling;
+    //     const show_hide_list = document.querySelectorAll(".show_hide_list");
+    //     show_hide_list.forEach((item) => item.classList.remove("active_hide_list"));
+    //     ulList.classList.add("active_hide_list");
+      
+    //     if (ulList.classList.contains("active_hide_list")) {
+    //       currentPath = "M5 11h14v2H5z";
+    //     } else {
+    //       currentPath = "M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z";
+    //     }
+    //     path.setAttribute("d", currentPath);
+    //   };
+      
     const showlistHandler = (e) => {
         const currentEle = e.target;
         const icon = currentEle.querySelector("svg path"); // Get the path directly inside the clicked element's SVG
         const ulList = currentEle.nextElementSibling;
-      
+        console.log(ulList)
         // Find all lists and reset them
         const allLists = document.querySelectorAll(".show_hide_list");
         const allIcons = document.querySelectorAll(".sublist_heading svg path");
@@ -328,7 +348,6 @@ const Footer = () => {
           icon.setAttribute("d", "M5 11h14v2H5z"); // Change to 'minus'
         }
       };
-      
       
   return (
     <>

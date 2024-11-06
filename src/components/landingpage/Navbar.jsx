@@ -54,13 +54,15 @@ const Navbar = () => {
   const isProductThree = location.pathname.includes(
     "productcard/productcardthree"
   );
+  const isLogin = location.pathname.includes('login')
   const isSearch = location.pathname.includes("search");
-  console.log("isCheckOut===>", isProductOne, isProductTwo, isProductThree);
+  const isForgotPassword = location.pathname.includes("forgot-password");
+  // console.log("isCheckOut===>", isProductOne, isProductTwo, isProductThree);
 
   useEffect(() => {
     const markquee = document.querySelector(".headerMarkquee");
     const header = document.querySelector(".navbar");
-    const headerSlider = document.querySelector(".headerSlider");
+    // const headerSlider = document.querySelector(".headerSlider");
 
     if (
       isLocationMatch ||
@@ -68,7 +70,9 @@ const Navbar = () => {
       isShopNow ||
       isProductOne ||
       isProductTwo ||
-      isProductThree
+      isProductThree || 
+      isLogin ||
+      isForgotPassword
     ) {
       if (markquee) markquee.style.display = "none";
       if (header) header.style.boxShadow = "0 5px 5px -7px #989898";
@@ -83,6 +87,8 @@ const Navbar = () => {
     isProductOne,
     isProductTwo,
     isProductThree,
+    isLogin,
+    isForgotPassword
   ]);
 
   const searchHandler = () => {

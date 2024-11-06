@@ -3,7 +3,7 @@ import styled from "styled-components";
 import allProductData from "../products/AllProducts";
 import { useDispatch, useSelector } from "react-redux";
 import { addTocart } from "../features/cartSlice";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import ProductNavbar from "./ProductNavbar";
 const Wrapper = styled.div`
   .productImageCard {
@@ -13,19 +13,18 @@ const Wrapper = styled.div`
     row-gap: 4rem;
     width: 90%;
     margin: 0 auto;
-    @media(min-width:330px){
+    @media (min-width: 330px) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
     }
-    @media (min-width:480px){
+    @media (min-width: 480px) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    @media(min-width:780px){
+    @media (min-width: 780px) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-    @media(min-width:1024px){
+    @media (min-width: 1024px) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
-   
   }
   .card_image {
     box-sizing: border-box;
@@ -108,27 +107,27 @@ const Wrapper = styled.div`
       font-weight: 400 !important;
     }
   }
-  .addCart_btn{
+  .addCart_btn {
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
   }
-  .hoverAdd_Cart:hover > .addCart_btn{
+  .hoverAdd_Cart:hover > .addCart_btn {
     opacity: 1;
     visibility: visible;
-    transform:translateY(-55px);
-    transition:transform 0.3s ease-in-out;
+    transform: translateY(-55px);
+    transition: transform 0.3s ease-in-out;
   }
-@media(min-width:480px){
- .product-name{
-  font-size:12px !important;
- }
-}
-@media(min-width:1200px){
-  .product-name{
-  font-size:14px !important;
- }
-}
+  @media (min-width: 480px) {
+    .product-name {
+      font-size: 12px !important;
+    }
+  }
+  @media (min-width: 1200px) {
+    .product-name {
+      font-size: 14px !important;
+    }
+  }
 `;
 
 const Button = styled.button`
@@ -147,14 +146,31 @@ const Button = styled.button`
   cursor: pointer;
 `;
 const ProductCardOne = () => {
-  const { ProductOne } = useSelector((state) => state.allCart.item);
+  const location = useLocation();
+  const pathOne = location.pathname.includes("productcard/productcardone");
+  const pathTwo = location.pathname.includes("productcard/productcardtwo");
+  const pathThree = location.pathname.includes("productcard/productcardthree");
+
+  const { ProductOne, ProductTwo, ProductThree } = useSelector(
+    (state) => state.allCart.item
+  );
   const dispatch = useDispatch();
+  let ProductItems;
+
+  if (pathTwo) {
+    ProductItems = [...ProductTwo];
+  } else if (pathThree) {
+    ProductItems = [...ProductThree];
+  } else {
+    ProductItems = [...ProductOne];
+  }
+  console.log("==>", ProductItems);
   return (
     <>
-      <ProductNavbar/>
+      <ProductNavbar />
       <Wrapper>
         <div className="productImageCard" style={{ marginTop: "5rem" }}>
-          {ProductOne.map((items) => {
+          {ProductItems?.map((items) => {
             return (
               <>
                 <div
@@ -219,7 +235,7 @@ const ProductCardOne = () => {
                               className=""
                               style={{ color: "rgb(43, 43, 43)" }}
                             >
-                             ₺ {items.discount_price2}
+                              ₺ {items.discount_price2}
                             </span>
                           </div>
                         </div>
