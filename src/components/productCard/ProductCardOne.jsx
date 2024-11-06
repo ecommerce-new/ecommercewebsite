@@ -164,7 +164,7 @@ const ProductCardOne = () => {
   } else {
     ProductItems = [...ProductOne];
   }
-  console.log("==>", ProductItems);
+  // console.log("==>", ProductItems);
   return (
     <>
       <ProductNavbar />
