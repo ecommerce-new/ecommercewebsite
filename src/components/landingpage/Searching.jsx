@@ -180,6 +180,10 @@ const WrapperSearching = styled.div`
       place-content: center;
       padding-left: 1rem;
       padding-right: 1rem;
+      cursor: pointer;
+      &:hover{
+        background:#ededed;
+      }
     }
   }
   /* close searching sectino end here  */

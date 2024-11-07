@@ -4,9 +4,11 @@ import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs } from "swiper/modules";
 import { SwiperNavButtons } from "../twistProductSlider/SwiperNavButtons";
-import { useParams } from "react-router-dom";
-
+// import { useParams } from "react-router-dom";
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
+
 
 
 const Grid = styled.div`
@@ -30,6 +32,7 @@ const Grid = styled.div`
   }
 `;
 const WrapperImage = styled.div`
+
   position: relative;
   height: 100%;
   display: grid;
@@ -224,12 +227,24 @@ const WrapperImage = styled.div`
       width: 40rem;
     }
   }
+
+  .swiper-pagination-bullet-active{
+    background:#000 !important;
+    width:4rem;
+    height:1rem;
+    border-radius:2rem;
+  }
+  .swiper-pagination-bullet {
+    background: silver;
+    opacity: 1;
+  }
 `;
 
 const CartPop = ({ cartPopImg, setCartPop_Visible }) => {
   const closeAddCart_Handler = () => {
     setCartPop_Visible(false);
   };
+
   return (
     <>
       <WrapperImage>
@@ -256,10 +271,13 @@ const CartPop = ({ cartPopImg, setCartPop_Visible }) => {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
               }}
-              modules={[Navigation, Thumbs]}
+              modules={[Navigation, Thumbs,Pagination]}
               grabCursor={true}
               className="product_images_slider"
               centeredSlides={true}
+
+              pagination={true}
+             
             >
               {cartPopImg.productImage.map((item, index) => {
                 return (
