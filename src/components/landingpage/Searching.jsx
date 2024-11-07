@@ -44,6 +44,7 @@ const WrapperSearching = styled.div`
       padding-right: 1rem;
     }
   }
+
   @media (max-width: 999px) {
     .logo {
       display: none;
@@ -52,7 +53,7 @@ const WrapperSearching = styled.div`
       padding-left: 20px;
       padding-right: 20px;
       /* background: green; */
-      column-gap: 2rem;
+      column-gap: 1rem;
       margin-top: 2rem;
     }
   }
@@ -169,6 +170,19 @@ const WrapperSearching = styled.div`
     transform: translateY(10px);
     margin-bottom: 2rem;
   }
+
+  /* close searching section start here */
+  @media (max-width: 999px) {
+    .close_searching {
+      background-color: #f5f5f5;
+      height: 5rem;
+      display: grid;
+      place-content: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  /* close searching sectino end here  */
 `;
 
 // button start here
@@ -202,7 +216,7 @@ const Cartpop_div = styled.div`
     z-index: 999;
   }
 `;
-const Searching = ({setSearching}) => {
+const Searching = ({ setSearching }) => {
   const { searching } = useSelector((state) => state.allCart.item);
   const [cartPop_visible, setCartPop_Visible] = useState(false);
   const [cartPopImg, setCartPopImg] = useState(null);
@@ -220,149 +234,147 @@ const Searching = ({setSearching}) => {
   // console.log("CartPopImg==>", cartPop_visible);
 
   const closeSearchList_Handler = () => {
-    setSearching(false)
+    setSearching(false);
   };
   return (
     <>
-      
-        <WrapperSearching>
-          {/* cartPop start here */}
-          {cartPop_visible && (
-            <Cartpop_div className="CartPop">
-              <CartPop
-                cartPopImg={cartPopImg}
-                setCartPop_Visible={setCartPop_Visible}
-              />
-            </Cartpop_div>
-          )}
+      <WrapperSearching>
+        {/* cartPop start here */}
+        {cartPop_visible && (
+          <Cartpop_div className="CartPop">
+            <CartPop
+              cartPopImg={cartPopImg}
+              setCartPop_Visible={setCartPop_Visible}
+            />
+          </Cartpop_div>
+        )}
 
-          {/* cartPop end here  */}
-          <div className="searching_section">
-            <div className="logo" style={{ cursor: "pointer" }}>
-              <img src={logo} alt="logo" />
-            </div>
-            {/* searching section */}
-            <div className="searching_input">
-              <div className="search_icon" style={{ cursor: "pointer" }}>
-                <span class="overlay-search-icon">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 24 24"
-                    height="25"
-                    width="25"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path>
-                  </svg>
-                </span>
-              </div>
-              <input type="text" placeholder="What were you looking for?" />
-            </div>
-            {/* close box */}
-            <div className="close_searching" onClick={closeSearchList_Handler}>
-              <span
-                class="overlay-close-icon cornered"
-                style={{ cursor: "pointer" }}
-              >
+        {/* cartPop end here  */}
+        <div className="searching_section">
+          <div className="logo" style={{ cursor: "pointer" }}>
+            <img src={logo} alt="logo" />
+          </div>
+          {/* searching section */}
+          <div className="searching_input">
+            <div className="search_icon" style={{ cursor: "pointer" }}>
+              <span class="overlay-search-icon">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
                   stroke-width="0"
                   viewBox="0 0 24 24"
-                  height="20"
-                  width="20"
+                  height="25"
+                  width="25"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                  <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path>
                 </svg>
               </span>
             </div>
+            <input type="text" placeholder="What were you looking for?" />
           </div>
+          {/* close box */}
+          <div className="close_searching" onClick={closeSearchList_Handler}>
+            <span
+              class="overlay-close-icon cornered"
+              style={{ cursor: "pointer" }}
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                height="20"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
 
-          {/* search card start here */}
-          <div className="searching_card">
-            {searching?.map((items, index) => {
-              return (
-                <>
-                  <div
-                    className="main_card_section"
-                    style={{ display: "grid", placeContent: "center" }}
-                    key={items.id}
-                    onClick={() => dispatch(addTocart(items))}
-                  >
-                    <div className="card_section">
-                      <div className="hoverAdd_Cart">
-                        <div className="card_image">
-                          <span>
-                            <img src={items.img} alt="card" />
-                          </span>
-                        </div>
-
-                        {/* button start here */}
-                        <div className="addCart_btn">
-                          <Button onClick={addCart_butnHandler} id={items.id}>
-                            ADD CART
-                          </Button>
-                        </div>
-                        {/* button end here  */}
+        {/* search card start here */}
+        <div className="searching_card">
+          {searching?.map((items, index) => {
+            return (
+              <>
+                <div
+                  className="main_card_section"
+                  style={{ display: "grid", placeContent: "center" }}
+                  key={items.id}
+                  onClick={() => dispatch(addTocart(items))}
+                >
+                  <div className="card_section">
+                    <div className="hoverAdd_Cart">
+                      <div className="card_image">
+                        <span>
+                          <img src={items.img} alt="card" />
+                        </span>
                       </div>
 
-                      <div className="card_details">
-                        <div className="details">
-                          <div className="brand_name">
-                            <h3
-                              class="brand-name"
-                              style={{
-                                color: "rgb(16, 16, 16)",
-                                textTransform: "none",
-                                textAlign: "unset",
-                                fontWeight: "700",
-                              }}
-                            >
-                              {items.brand_name}
-                            </h3>
-                            <h2
-                              class="product-name"
-                              style={{
-                                color: "rgb(16, 16, 16)",
-                                textAlign: "unset",
-                                fontSize: "14px",
-                                fontWeight: "400",
-                                margin: "0.5rem 0",
-                              }}
-                            >
-                              {items.product_name}
-                            </h2>
+                      {/* button start here */}
+                      <div className="addCart_btn">
+                        <Button onClick={addCart_butnHandler} id={items.id}>
+                          ADD CART
+                        </Button>
+                      </div>
+                      {/* button end here  */}
+                    </div>
+
+                    <div className="card_details">
+                      <div className="details">
+                        <div className="brand_name">
+                          <h3
+                            class="brand-name"
+                            style={{
+                              color: "rgb(16, 16, 16)",
+                              textTransform: "none",
+                              textAlign: "unset",
+                              fontWeight: "700",
+                            }}
+                          >
+                            {items.brand_name}
+                          </h3>
+                          <h2
+                            class="product-name"
+                            style={{
+                              color: "rgb(16, 16, 16)",
+                              textAlign: "unset",
+                              fontSize: "14px",
+                              fontWeight: "400",
+                              margin: "0.5rem 0",
+                            }}
+                          >
+                            {items.product_name}
+                          </h2>
+                        </div>
+                        <div className="discount_price_main">
+                          <div className="discount_percent ">
+                            {items.discount_per}
                           </div>
-                          <div className="discount_price_main">
-                            <div className="discount_percent ">
-                              {items.discount_per}
-                            </div>
-                            <div className="discount_price">
-                              <span>{items.discount_price1}</span>
-                              <span
-                                className=""
-                                style={{ color: "rgb(43, 43, 43)" }}
-                              >
-                                {items.discount_price2}
-                              </span>
-                            </div>
+                          <div className="discount_price">
+                            <span>{items.discount_price1}</span>
+                            <span
+                              className=""
+                              style={{ color: "rgb(43, 43, 43)" }}
+                            >
+                              {items.discount_price2}
+                            </span>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </>
-              );
-            })}
-          </div>
+                </div>
+              </>
+            );
+          })}
+        </div>
 
-          {/* search card end here  */}
-        </WrapperSearching>
-      
+        {/* search card end here  */}
+      </WrapperSearching>
     </>
   );
 };
