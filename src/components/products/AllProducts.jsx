@@ -710,6 +710,8 @@ import ProductThree24_ImageFive from "../../assets/img/productImageDetailPage/Pr
 
 // searching image end here 
 
+
+
 const allProductData = {
     ProductOne: [
         {

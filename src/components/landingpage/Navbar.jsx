@@ -25,6 +25,7 @@ const MainSearchingSection= styled.div`
   position: fixed;
   inset: 0;
   z-index: 999;
+  overflow-y: scroll;
 `
 const Navbar = () => {
   const { totalQuantity } = useSelector((state) => state.allCart);
