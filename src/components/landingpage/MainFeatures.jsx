@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 .features_para span{
     font-size:1.5rem;
 }
-@media(min-width:330px) and (max-width:640px){
+@media(min-width:330px) and (max-width:840px){
     .second_features{
         grid-template-columns: repeat(1,max-content);
         row-gap: 1rem;

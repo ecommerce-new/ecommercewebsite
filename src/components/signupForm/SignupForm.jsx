@@ -15,6 +15,10 @@ export const Signup_Form = styled.div`
   .sign_form {
     width: 70%;
     margin: 0 auto;
+
+    @media(max-width:640px){
+      width:74%;
+    }
   }
   .sign_form_section {
     flex: 30%;

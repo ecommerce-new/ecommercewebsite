@@ -10,7 +10,7 @@ const initialState = {
   anotherCart: [],
   hideLoginForm: true,
   removeActiveClass: false,
-  activeButton: 'login', // New property to track active button
+  activeButton: 'signUp', 
 };
 
 export const cartSlice = createSlice({

@@ -3,6 +3,8 @@ import React from "react";
 import styled from "styled-components";
 import { signUpSchema } from "../../schemas";
 import { NavLink } from "react-router-dom";
+import { updateActiveButton } from "../features/cartSlice";
+import { useDispatch } from "react-redux";
 const Wrapper = styled.div`
   .login_form_section{
     position:fixed;
@@ -140,6 +142,7 @@ const initialValues = {
   password: "",
 };
 const LoginForm = () => {
+  const dispatch = useDispatch()
   const { values, touched, handleBlur, handleChange, handleSubmit, errors } = useFormik({
     initialValues: initialValues,
     validationSchema: signUpSchema,
@@ -153,6 +156,11 @@ const LoginForm = () => {
     loginFormSection.style.display="none";
   }
   //   console.log("errors=>",errors)
+
+  const BecomeMemberHandler = () =>{
+    dispatch(updateActiveButton("signUp"))
+  }
+
   return (
     <Wrapper>
       <div className="login_form_section">
@@ -231,7 +239,7 @@ const LoginForm = () => {
           <div className="login_footer">
             <span className="create_account">
               <span>Hesabınız yok mu?</span> 
-             <NavLink style={{color:"black",marginLeft:"0.5rem"}} to="/sign-up">
+             <NavLink style={{color:"black",marginLeft:"0.5rem"}} to="/sign-up" onClick={BecomeMemberHandler}>
                 Üye Ol
              </NavLink>
             </span>

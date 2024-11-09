@@ -17,7 +17,7 @@ const HeadingOfLoginWrapper = styled.div`
 
 const HeadingOfLogin = () => {
   const dispatch = useDispatch();
-  const { activeButton} = useSelector((state) => state.allCart);
+  const {activeButton} = useSelector((state) => state.allCart);
 
   const loginFormHandler = () => {
     dispatch(updateActiveButton("login"));

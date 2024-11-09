@@ -161,6 +161,10 @@ const Wrapper = styled.div`
         font-size: 1.2rem;
         line-height: 0.5rem;
         padding-top: 1.5rem;
+
+        @media(max-width:480px){
+          font-size: 1rem;
+        }
       }
     }
     .tabContentActive {

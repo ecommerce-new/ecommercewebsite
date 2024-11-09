@@ -25,12 +25,20 @@ const Wrapper = styled.div`
     display: grid;
     place-content: center;
     place-items: center;
+
+
 }
 
 .email_heading h3 {
     color: #fff;
     font-size: 3.5rem;
     font-weight: 900;
+
+    @media(max-width:480px){
+        font-size:3rem;
+        padding-left:0.5rem;
+        padding-right:0.5rem;
+    }
 }
 
 .email_heading span {

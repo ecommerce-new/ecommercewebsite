@@ -12,8 +12,8 @@ import HeadingOfLogin from "./HeadingOfLogin";
 export const SignupLoginForm = styled.div`
   .flexLogin {
     ${(props) =>
-      props.path &&
-      `
+    props.path &&
+    `
     display: flex;
     column-gap: 4rem;
    
@@ -24,6 +24,11 @@ export const SignupLoginForm = styled.div`
     flex: 40%;
     padding: 0 8rem;
     padding-top:5rem;
+
+    @media(max-width:640px){
+      padding:0 5rem;
+      padding-top:5rem;
+    }
   }
   .forgot_pass_form {
     display: none;
@@ -118,7 +123,7 @@ const Signup_LoginForm = () => {
     }
   };
 
-  
+
   return (
     <>
       <Signup_Form>
@@ -189,7 +194,7 @@ const Signup_LoginForm = () => {
                   <div className="forgot_password">
                     <h3 onClick={forgotPasswordHandler}>
                       <NavLink
-                         to='/forgot-password'
+                        to='/forgot-password'
                         style={{
                           color: "#000",
                           fontWeight: 500,

@@ -6,8 +6,9 @@ import HeaderMarkque from "./HeaderMarkque";
 import { NavLink, useLocation } from "react-router-dom";
 import AddToCart from "./AddToCart";
 import Searching from "./Searching";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
+import { updateActiveButton } from "../features/cartSlice";
 const Wrapper = styled.div`
   .heading {
     margin-left: 0.5rem;
@@ -24,12 +25,13 @@ const MainSearchingSection= styled.div`
   background: white;
   position: fixed;
   inset: 0;
-  z-index: 999;
+  z-index: 9999;
   overflow-y: scroll;
 `
 const Navbar = () => {
   const { totalQuantity } = useSelector((state) => state.allCart);
   const location = useLocation();
+  const dispatch = useDispatch();
   const [searching, setSearching] = useState(false);
   const navbarHandler = () => {
     const headerOptionList = document.querySelector(".header_option_list");
@@ -96,22 +98,28 @@ const Navbar = () => {
     setSearching(true);
   };
 
-  // const mySwiper = document.querySelector(".mySwiper");
-  // console.log("===>",mySwiper)
-  // const observer = new IntersectionObserver((entries)=>{
-  // const stickyHeader = document.querySelector('.sticky_header');
-  // entries.forEach((entry)=>{
-  //  if(entry.isIntersecting === false){
-  //     stickyHeader.style.position = 'fixed';
-  //     stickyHeader.style.boxShadow = `  0 5px 5px -7px #989898`;
-  //  }else{
-  //     stickyHeader.style.position = '';
-  //     stickyHeader.style.boxShadow = '';
-  //  }
-  // })
-  // },{threshold:1})
+useEffect(()=>{
+  const mySwiper = document.querySelector(".mySwiper");
+  console.log("===>",mySwiper)
+  const observer = new IntersectionObserver((entries)=>{
+  const stickyHeader = document.querySelector('.sticky_header');
+  entries.forEach((entry)=>{
+   if(entry.isIntersecting === false){
+      stickyHeader.style.position = 'fixed';
+      stickyHeader.style.boxShadow = `  0 5px 5px -7px #989898`;
+   }else{
+      stickyHeader.style.position = '';
+      stickyHeader.style.boxShadow = '';
+   }
+  })
+  },{threshold:1})
   
-  // observer.observe(mySwiper)
+  observer.observe(mySwiper)
+
+},[])
+  const loginColorHandler = () =>{
+    dispatch(updateActiveButton("login"))
+  }
   return (
     <>
       {isCheckOut || isSearch ? null : (
@@ -168,7 +176,7 @@ const Navbar = () => {
                         <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path>
                       </svg>
                     </li>
-                    <li className="icon_sublist">
+                    <li className="icon_sublist" onClick={loginColorHandler}>
                     <NavLink style={{color:"black",marginLeft:"0.5rem"}} to="/login">
                         <svg
                           stroke="currentColor"
